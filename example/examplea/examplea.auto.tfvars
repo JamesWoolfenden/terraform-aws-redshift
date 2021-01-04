@@ -1,2 +1,10 @@
 common_tags = {
 "createby" = "Terraform" }
+jdbc_cidr      = ["0.0.0.0/0"]
+jdbc_port=80
+vpc_id         = ""
+public_subnets = [""]
+admin_password="L$ngDumb1"
+num_nodes=2
+admin_username="dumberer"
+database_name="myredshift"
