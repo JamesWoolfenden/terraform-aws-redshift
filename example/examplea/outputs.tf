@@ -1,4 +1,4 @@
 output "redshift" {
-  value=module.redshift.redshift
+  value     = module.redshift.redshift
   sensitive = true
 }
