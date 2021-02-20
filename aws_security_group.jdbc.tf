@@ -16,4 +16,3 @@ resource "aws_security_group" "jdbc" {
 
   tags = var.common_tags
 }
-

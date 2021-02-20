@@ -39,22 +39,50 @@ No requirements.
 | Name | Version |
 |------|---------|
 | aws | n/a |
+| random | n/a |
+
+## Modules
+
+No Modules.
+
+## Resources
+
+| Name |
+|------|
+| [aws_redshift_cluster](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/redshift_cluster) |
+| [aws_redshift_subnet_group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/redshift_subnet_group) |
+| [aws_security_group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group) |
+| [aws_vpc](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/vpc) |
+| [random_id](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/id) |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| common\_tags | This is to help you add tags to your cloud objects | `map` | n/a | yes |
-| delivery\_policy | A policy definition | `string` | `""` | no |
-| kms\_master\_key\_id | The kms key to use | `string` | `"alias/aws/redshift"` | no |
-| topic\_name | The name of the Topic | `string` | `"my first topic"` | no |
+| admin\_password | n/a | `any` | n/a | yes |
+| admin\_username | n/a | `any` | n/a | yes |
+| common\_tags | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
+| database\_name | n/a | `any` | n/a | yes |
+| elastic\_ip | n/a | `any` | n/a | yes |
+| identifier | n/a | `any` | n/a | yes |
+| jdbc\_cidr | n/a | `list(any)` | n/a | yes |
+| jdbc\_port | n/a | `any` | n/a | yes |
+| kms\_key\_id | n/a | `any` | n/a | yes |
+| name\_prefix | n/a | `any` | n/a | yes |
+| node\_type | n/a | `any` | n/a | yes |
+| num\_nodes | n/a | `any` | n/a | yes |
+| port | n/a | `any` | n/a | yes |
+| public\_subnets | n/a | `any` | n/a | yes |
+| s3\_logging\_bucket | n/a | `any` | n/a | yes |
+| s3\_logging\_path | n/a | `any` | n/a | yes |
+| skip\_final\_snapshot | n/a | `any` | n/a | yes |
+| vpc\_id | n/a | `any` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
 | redshift | n/a |
-
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
