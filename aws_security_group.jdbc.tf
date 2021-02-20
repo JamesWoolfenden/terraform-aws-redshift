@@ -14,6 +14,6 @@ resource "aws_security_group" "jdbc" {
     cidr_blocks = var.jdbc_cidr
   }
 
-  tags        = var.common_tags
+  tags = var.common_tags
 }
 

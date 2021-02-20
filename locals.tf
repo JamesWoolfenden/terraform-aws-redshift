@@ -5,6 +5,6 @@ locals {
     : var.admin_password
   )
   cluster_identifier = coalesce(var.identifier, "${lower(replace(var.name_prefix, "--", "-"))}redshift")
-  jdbc_name= "${var.name_prefix}redshift-jdbc-cidr-whitelist"
-  redshift_subnets="${lower(var.name_prefix)}redshift-subnet-group"
+  jdbc_name          = "${var.name_prefix}redshift-jdbc-cidr-whitelist"
+  redshift_subnets   = "${lower(var.name_prefix)}redshift-subnet-group"
 }

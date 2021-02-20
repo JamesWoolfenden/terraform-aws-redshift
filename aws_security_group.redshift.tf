@@ -1,6 +1,6 @@
 
 resource "aws_security_group" "redshift" {
-  name= local.redshift_security_group
+  name        = local.redshift_security_group
   description = "Allow JDBC traffic from VPC subnets"
   vpc_id      = var.vpc_id
   tags        = var.common_tags
@@ -23,5 +23,5 @@ resource "aws_security_group" "redshift" {
 }
 
 locals {
-  redshift_security_group="${var.name_prefix}redshift-subnet-group"
+  redshift_security_group = "${var.name_prefix}redshift-subnet-group"
 }
