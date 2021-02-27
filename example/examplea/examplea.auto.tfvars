@@ -1,5 +1,6 @@
 common_tags = {
-"createby" = "Terraform" }
+  "createby" = "Terraform",
+module = "teraform-aws-redshift" }
 jdbc_cidr      = ["0.0.0.0/0"]
 jdbc_port      = 80
 vpc_id         = ""

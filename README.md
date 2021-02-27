@@ -50,6 +50,7 @@ No Modules.
 | Name |
 |------|
 | [aws_redshift_cluster](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/redshift_cluster) |
+| [aws_redshift_parameter_group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/redshift_parameter_group) |
 | [aws_redshift_subnet_group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/redshift_subnet_group) |
 | [aws_security_group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group) |
 | [aws_vpc](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/vpc) |
@@ -71,6 +72,7 @@ No Modules.
 | name\_prefix | n/a | `any` | n/a | yes |
 | node\_type | n/a | `any` | n/a | yes |
 | num\_nodes | n/a | `any` | n/a | yes |
+| param\_group\_name | n/a | `string` | `"parameter-group-test-terraform"` | no |
 | port | n/a | `any` | n/a | yes |
 | public\_subnets | n/a | `any` | n/a | yes |
 | s3\_logging\_bucket | n/a | `any` | n/a | yes |
@@ -82,6 +84,7 @@ No Modules.
 
 | Name | Description |
 |------|-------------|
+| params | n/a |
 | redshift | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 

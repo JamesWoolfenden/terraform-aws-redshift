@@ -31,10 +31,16 @@ variable "admin_password" {
 }
 
 variable "public_subnets" {}
+
 variable "jdbc_port" {
 
 }
 
 variable "identifier" {
 
+}
+
+variable "param_group_name" {
+  type    = string
+  default = "parameter-group-test-terraform"
 }
