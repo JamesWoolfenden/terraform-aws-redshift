@@ -12,6 +12,7 @@ resource "aws_redshift_cluster" "redshift" {
   number_of_nodes           = var.num_nodes
   port                      = var.jdbc_port
   skip_final_snapshot       = var.skip_final_snapshot
+  publicly_accessible       = false
 
   vpc_security_group_ids = flatten([
     [aws_security_group.redshift.id],

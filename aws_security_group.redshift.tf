@@ -10,6 +10,7 @@ resource "aws_security_group" "redshift" {
     description = "Allow all outbound traffic"
     from_port   = var.jdbc_port
     to_port     = var.jdbc_port
+    # tfsec:ignore:AWS009
     cidr_blocks = ["0.0.0.0/0"]
   }
 
