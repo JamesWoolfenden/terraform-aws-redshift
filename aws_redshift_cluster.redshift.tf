@@ -1,4 +1,5 @@
 resource "aws_redshift_cluster" "redshift" {
+  # checkov:skip=CKV2_AWS_13: ADD REASON
   cluster_identifier        = local.cluster_identifier
   cluster_subnet_group_name = aws_redshift_subnet_group.subnet_group.name
   cluster_type              = var.num_nodes > 1 ? "multi-node" : "single-node"
