@@ -9,7 +9,10 @@ variable "name_prefix" {
 
 variable "num_nodes" {}
 variable "database_name" {}
-variable "elastic_ip" {}
+variable "elastic_ip" {
+  default = ""
+  type    = string
+}
 variable "kms_key_id" {}
 variable "admin_username" {}
 variable "node_type" {}

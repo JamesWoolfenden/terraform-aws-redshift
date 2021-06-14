@@ -65,7 +65,7 @@ No modules.
 | <a name="input_admin_username"></a> [admin\_username](#input\_admin\_username) | n/a | `any` | n/a | yes |
 | <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
 | <a name="input_database_name"></a> [database\_name](#input\_database\_name) | n/a | `any` | n/a | yes |
-| <a name="input_elastic_ip"></a> [elastic\_ip](#input\_elastic\_ip) | n/a | `any` | n/a | yes |
+| <a name="input_elastic_ip"></a> [elastic\_ip](#input\_elastic\_ip) | n/a | `string` | `""` | no |
 | <a name="input_identifier"></a> [identifier](#input\_identifier) | n/a | `any` | n/a | yes |
 | <a name="input_jdbc_cidr"></a> [jdbc\_cidr](#input\_jdbc\_cidr) | n/a | `list(any)` | n/a | yes |
 | <a name="input_jdbc_port"></a> [jdbc\_port](#input\_jdbc\_port) | n/a | `any` | n/a | yes |

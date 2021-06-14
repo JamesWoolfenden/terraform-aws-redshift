@@ -25,12 +25,9 @@ variable "admin_password" {
   sensitive = true
 }
 
-variable "kms_key_id" {}
 variable "admin_username" {}
 variable "database_name" {}
-variable "elastic_ip" {}
 variable "jdbc_port" {}
 variable "s3_logging_path" {}
-variable "s3_logging_bucket" {}
 variable "num_nodes" {}
 variable "node_type" {}
