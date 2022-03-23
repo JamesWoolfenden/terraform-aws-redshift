@@ -30,17 +30,16 @@ module "redshift" {
 The example in the **examplea** folder shows how to pass your own policy in when creating your key.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-
 ## Requirements
 
 No requirements.
 
 ## Providers
 
-| Name                                                      | Version |
-| --------------------------------------------------------- | ------- |
-| <a name="provider_aws"></a> [aws](#provider_aws)          | n/a     |
-| <a name="provider_random"></a> [random](#provider_random) | n/a     |
+| Name | Version |
+|------|---------|
+| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
+| <a name="provider_random"></a> [random](#provider\_random) | n/a |
 
 ## Modules
 
@@ -48,47 +47,46 @@ No modules.
 
 ## Resources
 
-| Name                                                                                                                                          | Type        |
-| --------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| [aws_redshift_cluster.redshift](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/redshift_cluster)                 | resource    |
-| [aws_redshift_parameter_group.examplea](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/redshift_parameter_group) | resource    |
-| [aws_redshift_subnet_group.subnet_group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/redshift_subnet_group)   | resource    |
-| [aws_security_group.jdbc](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group)                         | resource    |
-| [aws_security_group.redshift](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group)                     | resource    |
-| [random_id.random_pass](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/id)                                    | resource    |
-| [aws_vpc.vpc](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/vpc)                                             | data source |
+| Name | Type |
+|------|------|
+| [aws_redshift_cluster.redshift](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/redshift_cluster) | resource |
+| [aws_redshift_parameter_group.examplea](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/redshift_parameter_group) | resource |
+| [aws_redshift_subnet_group.subnet_group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/redshift_subnet_group) | resource |
+| [aws_security_group.jdbc](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group) | resource |
+| [aws_security_group.redshift](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group) | resource |
+| [random_id.random_pass](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/id) | resource |
+| [aws_vpc.vpc](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/vpc) | data source |
 
 ## Inputs
 
-| Name                                                                                       | Description                                        | Type        | Default                            | Required |
-| ------------------------------------------------------------------------------------------ | -------------------------------------------------- | ----------- | ---------------------------------- | :------: |
-| <a name="input_admin_password"></a> [admin_password](#input_admin_password)                | n/a                                                | `any`       | n/a                                |   yes    |
-| <a name="input_admin_username"></a> [admin_username](#input_admin_username)                | n/a                                                | `any`       | n/a                                |   yes    |
-| <a name="input_common_tags"></a> [common_tags](#input_common_tags)                         | This is to help you add tags to your cloud objects | `map(any)`  | n/a                                |   yes    |
-| <a name="input_database_name"></a> [database_name](#input_database_name)                   | n/a                                                | `any`       | n/a                                |   yes    |
-| <a name="input_elastic_ip"></a> [elastic_ip](#input_elastic_ip)                            | n/a                                                | `string`    | `""`                               |    no    |
-| <a name="input_identifier"></a> [identifier](#input_identifier)                            | n/a                                                | `any`       | n/a                                |   yes    |
-| <a name="input_jdbc_cidr"></a> [jdbc_cidr](#input_jdbc_cidr)                               | n/a                                                | `list(any)` | n/a                                |   yes    |
-| <a name="input_jdbc_port"></a> [jdbc_port](#input_jdbc_port)                               | n/a                                                | `any`       | n/a                                |   yes    |
-| <a name="input_kms_key_id"></a> [kms_key_id](#input_kms_key_id)                            | n/a                                                | `any`       | n/a                                |   yes    |
-| <a name="input_name_prefix"></a> [name_prefix](#input_name_prefix)                         | n/a                                                | `any`       | n/a                                |   yes    |
-| <a name="input_node_type"></a> [node_type](#input_node_type)                               | n/a                                                | `any`       | n/a                                |   yes    |
-| <a name="input_num_nodes"></a> [num_nodes](#input_num_nodes)                               | n/a                                                | `any`       | n/a                                |   yes    |
-| <a name="input_param_group_name"></a> [param_group_name](#input_param_group_name)          | n/a                                                | `string`    | `"parameter-group-test-terraform"` |    no    |
-| <a name="input_port"></a> [port](#input_port)                                              | n/a                                                | `any`       | n/a                                |   yes    |
-| <a name="input_public_subnets"></a> [public_subnets](#input_public_subnets)                | n/a                                                | `any`       | n/a                                |   yes    |
-| <a name="input_s3_logging_bucket"></a> [s3_logging_bucket](#input_s3_logging_bucket)       | n/a                                                | `any`       | n/a                                |   yes    |
-| <a name="input_s3_logging_path"></a> [s3_logging_path](#input_s3_logging_path)             | n/a                                                | `any`       | n/a                                |   yes    |
-| <a name="input_skip_final_snapshot"></a> [skip_final_snapshot](#input_skip_final_snapshot) | n/a                                                | `any`       | n/a                                |   yes    |
-| <a name="input_vpc_id"></a> [vpc_id](#input_vpc_id)                                        | n/a                                                | `any`       | n/a                                |   yes    |
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_admin_password"></a> [admin\_password](#input\_admin\_password) | n/a | `any` | n/a | yes |
+| <a name="input_admin_username"></a> [admin\_username](#input\_admin\_username) | n/a | `any` | n/a | yes |
+| <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
+| <a name="input_database_name"></a> [database\_name](#input\_database\_name) | n/a | `any` | n/a | yes |
+| <a name="input_elastic_ip"></a> [elastic\_ip](#input\_elastic\_ip) | n/a | `string` | `""` | no |
+| <a name="input_identifier"></a> [identifier](#input\_identifier) | n/a | `any` | n/a | yes |
+| <a name="input_jdbc_cidr"></a> [jdbc\_cidr](#input\_jdbc\_cidr) | n/a | `list(any)` | n/a | yes |
+| <a name="input_jdbc_port"></a> [jdbc\_port](#input\_jdbc\_port) | n/a | `any` | n/a | yes |
+| <a name="input_kms_key_id"></a> [kms\_key\_id](#input\_kms\_key\_id) | n/a | `any` | n/a | yes |
+| <a name="input_name_prefix"></a> [name\_prefix](#input\_name\_prefix) | n/a | `any` | n/a | yes |
+| <a name="input_node_type"></a> [node\_type](#input\_node\_type) | n/a | `any` | n/a | yes |
+| <a name="input_num_nodes"></a> [num\_nodes](#input\_num\_nodes) | n/a | `any` | n/a | yes |
+| <a name="input_param_group_name"></a> [param\_group\_name](#input\_param\_group\_name) | n/a | `string` | `"parameter-group-test-terraform"` | no |
+| <a name="input_port"></a> [port](#input\_port) | n/a | `any` | n/a | yes |
+| <a name="input_public_subnets"></a> [public\_subnets](#input\_public\_subnets) | n/a | `any` | n/a | yes |
+| <a name="input_s3_logging_bucket"></a> [s3\_logging\_bucket](#input\_s3\_logging\_bucket) | n/a | `any` | n/a | yes |
+| <a name="input_s3_logging_path"></a> [s3\_logging\_path](#input\_s3\_logging\_path) | n/a | `any` | n/a | yes |
+| <a name="input_skip_final_snapshot"></a> [skip\_final\_snapshot](#input\_skip\_final\_snapshot) | n/a | `any` | n/a | yes |
+| <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | n/a | `any` | n/a | yes |
 
 ## Outputs
 
-| Name                                                        | Description |
-| ----------------------------------------------------------- | ----------- |
-| <a name="output_params"></a> [params](#output_params)       | n/a         |
-| <a name="output_redshift"></a> [redshift](#output_redshift) | n/a         |
-
+| Name | Description |
+|------|-------------|
+| <a name="output_params"></a> [params](#output\_params) | n/a |
+| <a name="output_redshift"></a> [redshift](#output\_redshift) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
