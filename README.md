@@ -1,6 +1,6 @@
 # terraform-aws-redshift
 
-[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-redshift/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-redshift)
+[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-redshift/workflows/Verify/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-redshift)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-redshift.svg)](https://github.com/JamesWoolfenden/terraform-aws-redshift/releases/latest)
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/JamesWoolfenden/terraform-aws-redshift.svg?label=latest)](https://github.com/JamesWoolfenden/terraform-aws-redshift/releases/latest)
 ![Terraform Version](https://img.shields.io/badge/tf-%3E%3D0.14.0-blue.svg)
