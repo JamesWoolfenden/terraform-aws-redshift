@@ -125,7 +125,9 @@ resource "aws_iam_policy" "terraform_pike" {
                 "ec2:RevokeSecurityGroupEgress",
                 "ec2:RevokeSecurityGroupIngress"
             ],
-            "Resource": "*"
+            "Resource": [
+                "*"
+            ]
         },
         {
             "Sid": "VisualEditor1",
@@ -151,7 +153,9 @@ resource "aws_iam_policy" "terraform_pike" {
                 "redshift:ModifyClusterParameterGroup",
                 "redshift:ModifyClusterSubnetGroup"
             ],
-            "Resource": "*"
+            "Resource": [
+                "*"
+            ]
         }
     ]
 })
@@ -181,7 +185,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-aws-
 
 ## Copyrights
 
-Copyright © 2019-2022 James Woolfenden
+Copyright © 2019-2023 James Woolfenden
 
 ## License
 

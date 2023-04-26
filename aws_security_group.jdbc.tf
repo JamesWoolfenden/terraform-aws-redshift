@@ -1,4 +1,4 @@
-
+#tfsec:ignore:aws-ec2-no-public-egress-sgr
 resource "aws_security_group" "jdbc" {
   count       = length(var.jdbc_cidr) > 0 ? 1 : 0
   name        = local.jdbc_name

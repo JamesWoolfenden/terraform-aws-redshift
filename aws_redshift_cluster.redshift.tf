@@ -13,7 +13,7 @@ resource "aws_redshift_cluster" "redshift" {
   port                      = var.jdbc_port
   skip_final_snapshot       = var.skip_final_snapshot
   publicly_accessible       = false
-
+  enhanced_vpc_routing      = true
   vpc_security_group_ids = flatten([
     [aws_security_group.redshift.id],
     aws_security_group.jdbc.*.id,

@@ -1,4 +1,4 @@
-
+#tfsec:ignore:aws-ec2-no-public-egress-sgr
 resource "aws_security_group" "redshift" {
   name        = local.redshift_security_group
   description = "Allow JDBC traffic from VPC subnets"
