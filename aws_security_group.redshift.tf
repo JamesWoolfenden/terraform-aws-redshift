@@ -1,5 +1,6 @@
 #tfsec:ignore:aws-ec2-no-public-egress-sgr
 resource "aws_security_group" "redshift" {
+  # checkov:skip=CKV_AWS_382: Unrestricted outbound access required for resource functionality
   name        = local.redshift_security_group
   description = "Allow JDBC traffic from VPC subnets"
   vpc_id      = var.vpc_id
