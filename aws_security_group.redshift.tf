@@ -22,7 +22,6 @@ resource "aws_security_group" "redshift" {
     cidr_blocks = [data.aws_vpc.vpc.cidr_block]
   }
 }
-
 locals {
   redshift_security_group = "${var.name_prefix}redshift-subnet-group"
 }

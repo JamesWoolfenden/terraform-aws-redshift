@@ -8,12 +8,10 @@ resource "aws_s3_bucket" "logging" {
   # checkov:skip=CKV2_AWS_62: Logging bucket
   # checkov:skip=CKV2_AWS_61: Logging bucket
 }
-
 resource "aws_s3_bucket_acl" "logging" {
   bucket = aws_s3_bucket.logging.bucket
   acl    = "private"
 }
-
 #tfsec:ignore:aws-s3-enable-versioning
 resource "aws_s3_bucket_versioning" "logging" {
   bucket = aws_s3_bucket.logging.id
@@ -21,7 +19,6 @@ resource "aws_s3_bucket_versioning" "logging" {
     status = "Disabled"
   }
 }
-
 resource "aws_s3_bucket_server_side_encryption_configuration" "logging" {
   bucket = aws_s3_bucket.logging.bucket
 
