@@ -133,6 +133,16 @@ resource "aws_iam_policy" "terraform_pike" {
             "Sid": "VisualEditor1",
             "Effect": "Allow",
             "Action": [
+                "iam:CreateServiceLinkedRole"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Sid": "VisualEditor2",
+            "Effect": "Allow",
+            "Action": [
                 "redshift:CreateCluster",
                 "redshift:CreateClusterParameterGroup",
                 "redshift:CreateClusterSubnetGroup",
