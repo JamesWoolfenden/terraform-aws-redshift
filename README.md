@@ -1,13 +1,11 @@
 # terraform-aws-redshift
 
-[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-redshift/workflows/Verify/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-redshift)
+[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-redshift/workflows/Verify/badge.svg?branch=main)](https://github.com/JamesWoolfenden/terraform-aws-redshift)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-redshift.svg)](https://github.com/JamesWoolfenden/terraform-aws-redshift/releases/latest)
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/JamesWoolfenden/terraform-aws-redshift.svg?label=latest)](https://github.com/JamesWoolfenden/terraform-aws-redshift/releases/latest)
 ![Terraform Version](https://img.shields.io/badge/tf-%3E%3D0.14.0-blue.svg)
-[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/JamesWoolfenden/terraform-aws-redshift/cis_aws)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=JamesWoolfenden%2Fterraform-aws-redshift&benchmark=CIS+AWS+V1.2)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![checkov](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
-[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/jameswoolfenden/terraform-aws-redshift/general)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=JamesWoolfenden%2Fterraform-aws-redshift&benchmark=INFRASTRUCTURE+SECURITY)
 
 Terraform module -
 
@@ -37,7 +35,7 @@ No requirements.
 ## Providers
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
 | <a name="provider_random"></a> [random](#provider\_random) | n/a |
 
@@ -48,7 +46,7 @@ No modules.
 ## Resources
 
 | Name | Type |
-|------|------|
+| ---- | ---- |
 | [aws_redshift_cluster.redshift](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/redshift_cluster) | resource |
 | [aws_redshift_parameter_group.examplea](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/redshift_parameter_group) | resource |
 | [aws_redshift_subnet_group.subnet_group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/redshift_subnet_group) | resource |
@@ -60,7 +58,7 @@ No modules.
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_admin_password"></a> [admin\_password](#input\_admin\_password) | n/a | `any` | n/a | yes |
 | <a name="input_admin_username"></a> [admin\_username](#input\_admin\_username) | n/a | `any` | n/a | yes |
 | <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
@@ -84,7 +82,7 @@ No modules.
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_params"></a> [params](#output\_params) | n/a |
 | <a name="output_redshift"></a> [redshift](#output\_redshift) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

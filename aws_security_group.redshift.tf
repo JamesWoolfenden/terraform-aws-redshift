@@ -1,4 +1,3 @@
-#tfsec:ignore:aws-ec2-no-public-egress-sgr
 resource "aws_security_group" "redshift" {
   # checkov:skip=CKV_AWS_382: Unrestricted outbound access required for resource functionality
   name        = local.redshift_security_group
@@ -11,7 +10,6 @@ resource "aws_security_group" "redshift" {
     description = "Allow all outbound traffic"
     from_port   = var.jdbc_port
     to_port     = var.jdbc_port
-    # tfsec:ignore:AWS009
     cidr_blocks = ["0.0.0.0/0"]
   }
 

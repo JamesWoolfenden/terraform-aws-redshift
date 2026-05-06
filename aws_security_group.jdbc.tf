@@ -1,6 +1,6 @@
-#tfsec:ignore:aws-ec2-no-public-egress-sgr
 resource "aws_security_group" "jdbc" {
   # checkov:skip=CKV_AWS_382: Unrestricted outbound access required for resource functionality
+  # checkov:skip=CKV2_AWS_5: attached to redshift cluster via count; checkov cannot trace
   count       = length(var.jdbc_cidr) > 0 ? 1 : 0
   name        = local.jdbc_name
   description = "Allow query traffic from specified JDBC CIDR"

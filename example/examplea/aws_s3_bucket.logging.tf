@@ -1,4 +1,3 @@
-#tfsec:ignore:aws-s3-enable-bucket-logging
 resource "aws_s3_bucket" "logging" {
   # checkov:skip=CKV2_AWS_37: Logging bucket
   # checkov:skip=CKV2_AWS_41: Logging bucket
@@ -12,7 +11,6 @@ resource "aws_s3_bucket_acl" "logging" {
   bucket = aws_s3_bucket.logging.bucket
   acl    = "private"
 }
-#tfsec:ignore:aws-s3-enable-versioning
 resource "aws_s3_bucket_versioning" "logging" {
   bucket = aws_s3_bucket.logging.id
   versioning_configuration {
